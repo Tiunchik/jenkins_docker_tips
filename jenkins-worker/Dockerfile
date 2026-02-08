@@ -2,7 +2,7 @@ FROM jenkins/inbound-agent:latest
 
 USER root
 
-# Установка curl и jq для работы с API
+# Install curl and jq for API work
 RUN apt-get update && \
     apt-get install -y curl jq && \
     apt-get install -y xmlstarlet && \

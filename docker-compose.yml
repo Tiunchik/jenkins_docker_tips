@@ -11,7 +11,7 @@ services:
       - "50000:50000"
     environment:
       - JAVA_OPTS=-Djenkins.install.runSetupWizard=false
-      - JENKINS_OPTS=--argumentsRealm.roles.user=admin --argumentsRealm.passwd.admin=admin --argumentsRealm.roles.admin=admin
+#      - JENKINS_OPTS=--argumentsRealm.roles.user=admin --argumentsRealm.passwd.admin=admin --argumentsRealm.roles.admin=admin
     volumes:
       - jenkins-master-home:/var/jenkins_home
     networks:
@@ -24,9 +24,8 @@ services:
       dockerfile: Dockerfile
     container_name: jenkins-worker
     environment:
-#      - JENKINS_USER=admin
-#      - JENKINS_PASSWORD=admin
-      - JENKINS_AGENT_TOKEN=worker-token-12345
+      # - JENKINS_USER=admin
+      # - JENKINS_PASSWORD=admin
       - JENKINS_MASTER_SERVER=jenkins-master:8080
       - JENKINS_AGENT_NAME=worker-1
     volumes:

@@ -1,5 +1,5 @@
-# Jenkins Master - Список плагинов
-# Основные плагины для Jenkins
+# Jenkins Master - Plugins List
+# Core plugins for Jenkins
 workflow-job:latest
 workflow-aggregator:latest
 git:latest
