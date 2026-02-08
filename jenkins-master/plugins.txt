@@ -1,0 +1,23 @@
+# Jenkins Master - Список плагинов
+# Основные плагины для Jenkins
+workflow-job:latest
+workflow-aggregator:latest
+git:latest
+pipeline-stage-view:latest
+github:latest
+github-branch-source:latest
+pipeline-github-lib:latest
+credentials:latest
+credentials-binding:latest
+ssh-credentials:latest
+scm-api:latest
+structs:latest
+junit:latest
+matrix-project:latest
+antisamy-markup-formatter:latest
+script-security:latest
+timestamper:latest
+build-timeout:latest
+ws-cleanup:latest
+docker-workflow:latest
+kubernetes:latest
