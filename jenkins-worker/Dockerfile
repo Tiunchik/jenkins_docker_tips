@@ -1,4 +1,4 @@
-FROM jenkins/inbound-agent:latest
+FROM jenkins/inbound-agent:latest-jdk25
 
 USER root
 
@@ -8,8 +8,6 @@ RUN apt-get update && \
     apt-get install -y xmlstarlet && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
-
-RUN java --version
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh

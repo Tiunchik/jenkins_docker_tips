@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:lts
+FROM jenkins/jenkins:lts-jdk25
 
 # Copy plugins list and trigger installation
 COPY plugins.txt /usr/share/jenkins/ref/plugins.txt

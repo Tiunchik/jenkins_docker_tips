@@ -10,6 +10,7 @@ pipeline-github-lib:latest
 credentials:latest
 credentials-binding:latest
 ssh-credentials:latest
+ssh-steps:latest
 scm-api:latest
 structs:latest
 junit:latest
@@ -21,3 +22,4 @@ build-timeout:latest
 ws-cleanup:latest
 docker-workflow:latest
 kubernetes:latest
+gradle:latest
