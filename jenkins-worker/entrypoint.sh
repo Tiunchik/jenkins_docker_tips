@@ -76,7 +76,7 @@ else
         }
       },
       \"retentionStrategy\": {
-        \"stapler-class\": \"hudson.slaves.RetentionStrategy\\$Always\"
+        \"stapler-class\": \"hudson.slaves.RetentionStrategy\$Always\"
       },
       \"nodeProperties\": {
         \"stapler-class-bag\": \"true\"
