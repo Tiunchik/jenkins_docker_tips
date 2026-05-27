@@ -1,0 +1,24 @@
+services:
+  jenkins-secrets:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: jenkins-secrets
+    environment:
+      # Jenkins connection settings
+      JENKINS_URL: "http://jenkins-master:8080"
+      JENKINS_USER: "${JENKINS_USER:-admin}"
+      JENKINS_PASSWORD: "${JENKINS_PASSWORD:-admin}"
+
+    env_file:
+      - .env
+    volumes:
+      - ./secrets-output:/app/output
+    networks:
+      - jenkins-network
+    restart: "no"
+
+networks:
+  jenkins-network:
+    name: jenkins-network
+    external: true
